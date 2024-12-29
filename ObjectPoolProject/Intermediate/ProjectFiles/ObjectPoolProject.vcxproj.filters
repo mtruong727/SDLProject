@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ObjectPoolProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ObjectPoolProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ObjectPoolProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ObjectPoolProject">
+      <UniqueIdentifier>{0351CAD4-1CBB-3934-A815-D507BCD1C2FF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ObjectPoolProject\ObjectPoolProject.Build.cs">
+      <Filter>Source\ObjectPoolProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ObjectPoolProject\ObjectPoolProject.cpp">
+      <Filter>Source\ObjectPoolProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ObjectPoolProject\ObjectPoolProject.h">
+      <Filter>Source\ObjectPoolProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ObjectPoolProject\PooledObject.cpp">
+      <Filter>Source\ObjectPoolProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ObjectPoolProject\PooledObject.h">
+      <Filter>Source\ObjectPoolProject</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

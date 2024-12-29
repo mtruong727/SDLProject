@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\mtruo\\onedrive\\documents\\github\\ueobjectpool\\objectpoolproject\\source\\objectpoolproject\\objectpoolproject.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\mtruo\\onedrive\\documents\\github\\ueobjectpool\\objectpoolproject\\intermediate\\build\\win64\\x64\\objectpoolprojecteditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "c:\\users\\mtruo\\onedrive\\documents\\github\\ueobjectpool\\objectpoolproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\objectpoolproject\\definitions.objectpoolproject.h",
+            "c:\\users\\mtruo\\onedrive\\documents\\github\\ueobjectpool\\objectpoolproject\\source\\objectpoolproject\\objectpoolproject.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
