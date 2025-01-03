@@ -3,7 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Mtruo\\OneDrive\\Documents\\GitHub\\SDLProject\\Project1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mtruo\\OneDrive\\Desktop\\01_hello_SDL\\01_hello_SDL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2F47A3AC-3662-4B07-A8AA-BC7EF017BB03}|Project1.vcxproj|C:\\Users\\Mtruo\\OneDrive\\Documents\\GitHub\\SDLProject\\Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2F47A3AC-3662-4B07-A8AA-BC7EF017BB03}|Project1.vcxproj|solutionrelative:Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "01_hello_SDL.cpp",
-              "DocumentMoniker": "C:\\Users\\Mtruo\\OneDrive\\Desktop\\01_hello_SDL\\01_hello_SDL.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\01_hello_SDL\\01_hello_SDL.cpp",
-              "ToolTip": "C:\\Users\\Mtruo\\OneDrive\\Desktop\\01_hello_SDL\\01_hello_SDL.cpp",
-              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\01_hello_SDL\\01_hello_SDL.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Mtruo\\OneDrive\\Documents\\GitHub\\SDLProject\\Project1\\Source.cpp",
+              "RelativeDocumentMoniker": "Source.cpp",
+              "ToolTip": "C:\\Users\\Mtruo\\OneDrive\\Documents\\GitHub\\SDLProject\\Project1\\Source.cpp",
+              "RelativeToolTip": "Source.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACMAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-31T23:45:21.244Z",
+              "WhenOpened": "2025-01-03T04:12:00.676Z",
               "EditorCaption": ""
             }
           ]
