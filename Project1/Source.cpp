@@ -1,6 +1,8 @@
 //Using SDL and standard IO
 #include <SDL.h>
 #include <stdio.h>
+//#include <SDL_image.h>
+
 
 //Screen dimension constants
 const int SCREEN_WIDTH = 640;
@@ -35,7 +37,7 @@ bool init()
 	if(SDL_Init( SDL_INIT_VIDEO ) < 0)
 	//If SDL could not initialize
 	{
-		printf("SDL could not initialize! SDL_Error: %s\n", SDL_GetError());
+		printf("SDL could not initialize! SDL_Error: %s\n", SDL_GetError() );
 		success = false;
 	}
 	else
@@ -47,15 +49,54 @@ bool init()
 		//If the window was not created
 		if (gWindow == NULL)
 		{
-			printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
+			printf("Window could not be created! SDL_Error: %s\n", SDL_GetError() );
 			success = false;
 		}
 		else
 		{
 			//Get window surface
-			gScreenSurface = SDL_GetWindowSurface(gWindow);
+			//Call to SDL_GetWindowSurface with the window we created
+			//We call SDL_GetWindowSurface to grab the surface contained by the window
+			gScreenSurface = SDL_GetWindowSurface( gWindow );
 		}
 	}
+
+	return success;
+}
+
+bool LoadMedia()
+{
+	//Loading success flag
+	bool success = true;
+
+	//Load splash image
+	//Load BMP function loads an image from a file
+	//The first argument is the path to the image
+	//The second argument is the surface we want to load the image onto
+	gHelloWorld = SDL_LoadBMP("hello_world.bmp");
+	//If the image was not loaded
+	if (gHelloWorld == NULL)
+	{
+		printf( "Unable to load image %s! SDL Error: %s\n", "hello_world.bmp", SDL_GetError() );
+		success = false;
+	}
+
+	return success;
+}
+
+void close()
+{
+	//Deallocate surface
+	//Call to SDL_FreeSurface to deallocate the surface we loaded the image onto
+	SDL_FreeSurface(gHelloWorld);
+	gHelloWorld = NULL;
+	//Destroy window
+	//Call to SDL_DestroyWindow to destroy the window we created
+	SDL_DestroyWindow(gWindow);
+	gWindow = NULL;
+	//Quit SDL subsystems
+	//Call to SDL_Quit to shut down SDL
+	SDL_Quit();
 }
 
 //SDL requires this type of main so it is compatible with multiple platforms
@@ -63,56 +104,50 @@ bool init()
 //and the return type be an int
 int main(int argc, char* args[])
 {
-	//Declaration of SDL_Window pointer named window
-	//A window is a container for a 2D image
-	SDL_Window* window = NULL;
-	
-	//Declaration of SDL_Surface pointer named screenSurface
-	//A surface is a 2D image that is drawn on the window
-	SDL_Surface* screenSurface = NULL;
-
-
-	//Initialize SDL (Cant call any SDL functions without this)
-	if (SDL_Init(SDL_INIT_VIDEO) < 0)
+	//Start up SDL and create window
+	if ( !init() )
 	{
-		//If the value returned is less than 0, then SDL failed to initialize
-		//printf is print format to the console, it prints the string in the first argument
-		//string returned by SDL_GetError() is the error message
-		//%s is a format specifier that is replaced by the string in the second argument
-		printf("SDL could not initialize! SDL_Error: %s\n", SDL_GetError());
+		printf( "Failed to initialize!\n" );
 	}
-	//If SDL initialized successfully
 	else
 	{
-		//Create window function 
-		//Creates a window with the title "SDL Tutorial"
-		//SDL_WINDOWPOS_UNDEFINED and SDL_WINDOWPOS_UNDEFINED are the x and y positions of the window
-		//The next two arguments define the width and height of the window
-		//SDL_WINDOW_SHOWN is a flag that tells SDL to make sure the window is visible
-		window = SDL_CreateWindow("SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
-		//If there is an error creating the window
-		//Print the error message
-		if (window == NULL)
+		//Load media
+		if ( !loadMedia() )
 		{
-			printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
+			printf( "Failed to load media!\n" );
 		}
 		else
 		{
-			//If the window was created successfully
-			//Get window surface
-			screenSurface = SDL_GetWindowSurface(window);
-			//Fill the surface white
-			SDL_FillRect(screenSurface, NULL, SDL_MapRGB(screenSurface->format, 0xFF, 0xFF, 0xFF));
+			//Apply the image
+			//Call to SDL_BlitSurface to apply the image to the window surface
+			//The first argument is the source surface
+			//The second argument is the rectangle we want to copy from the source surface
+			//The third argument is the destination surface
+			//The fourth argument is the rectangle we want to copy to on the destination surface
+			SDL_BlitSurface( gHelloWorld, NULL, gScreenSurface, NULL );
 			//Update the surface
-			SDL_UpdateWindowSurface(window);
-			//Hack to get window to stay up
-			SDL_Event e; bool quit = false; while (quit == false) { while (SDL_PollEvent(&e)) { if (e.type == SDL_QUIT) quit = true; } }
+			//Call to SDL_UpdateWindowSurface to update the window with the surface we have been drawing to
+			SDL_UpdateWindowSurface( gWindow );
+			
+			//Hack the window to stay up
+			SDL_Event e; 
+			bool quit = false; 
+			while (quit == false)
+			{
+				while ( SDL_PollEvent( &e)  != 0 )
+				{
+					if (e.type == SDL_QUIT)
+					{
+						quit = true;
+					}
+				}
+			}
 		}
 	}
-	//Destroy window
-	SDL_DestroyWindow(window);
-	//Quit SDL subsystems
-	SDL_Quit();
-	//Return 0 to indicate success
+
+	//Free resources and close SDL
+	//Call to close to free resources and close SDL
+	close();
+
 	return 0;
 }
