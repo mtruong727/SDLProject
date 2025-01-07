@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mtruo\\source\\repos\\SDLProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66652A5D-9DE8-4297-BBDD-F626D9B8050E}|SDLProject.vcxproj|C:\\Users\\Mtruo\\source\\repos\\SDLProject\\MainSource.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{66652A5D-9DE8-4297-BBDD-F626D9B8050E}|SDLProject.vcxproj|solutionrelative:MainSource.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainSource.cpp",
+              "DocumentMoniker": "C:\\Users\\Mtruo\\source\\repos\\SDLProject\\MainSource.cpp",
+              "RelativeDocumentMoniker": "MainSource.cpp",
+              "ToolTip": "C:\\Users\\Mtruo\\source\\repos\\SDLProject\\MainSource.cpp",
+              "RelativeToolTip": "MainSource.cpp",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwG4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-07T20:24:30.974Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,2 +1,0 @@
-﻿Source.obj : error LNK2019: unresolved external symbol "bool __cdecl loadMedia(void)" (?loadMedia@@YA_NXZ) referenced in function _SDL_main
-C:\Users\Mtruo\OneDrive\Documents\GitHub\SDLProject\Project1\Debug\Project1.exe : fatal error LNK1120: 1 unresolved externals
