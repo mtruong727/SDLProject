@@ -33,15 +33,29 @@ bool init()
 
 	//Initialize SDL
 	if(SDL_Init( SDL_INIT_VIDEO ) < 0)
+	//If SDL could not initialize
 	{
-		printf("SDL could not initialize! SDL_Error: %s\n", SDL_GetError() );
+		printf("SDL could not initialize! SDL_Error: %s\n", SDL_GetError());
 		success = false;
 	}
 	else
 	{
-
+		//Create window
+		//Using global variable SDL_Window* gWindow
+		//Create Window function creates a window with the title "SDL Tutorial"
+		gWindow = SDL_CreateWindow("SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+		//If the window was not created
+		if (gWindow == NULL)
+		{
+			printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
+			success = false;
+		}
+		else
+		{
+			//Get window surface
+			gScreenSurface = SDL_GetWindowSurface(gWindow);
+		}
 	}
-
 }
 
 //SDL requires this type of main so it is compatible with multiple platforms
