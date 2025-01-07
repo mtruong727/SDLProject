@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Mtruo\\source\\repos\\SDLProject\\",
+  "WorkspaceRootPath": "C:\\Users\\Mtruo\\OneDrive\\Documents\\GitHub\\SDLProject\\SDLProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66652A5D-9DE8-4297-BBDD-F626D9B8050E}|SDLProject.vcxproj|C:\\Users\\Mtruo\\source\\repos\\SDLProject\\MainSource.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{66652A5D-9DE8-4297-BBDD-F626D9B8050E}|SDLProject.vcxproj|C:\\Users\\Mtruo\\OneDrive\\Documents\\GitHub\\SDLProject\\SDLProject\\MainSource.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{66652A5D-9DE8-4297-BBDD-F626D9B8050E}|SDLProject.vcxproj|solutionrelative:MainSource.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainSource.cpp",
-              "DocumentMoniker": "C:\\Users\\Mtruo\\source\\repos\\SDLProject\\MainSource.cpp",
+              "DocumentMoniker": "C:\\Users\\Mtruo\\OneDrive\\Documents\\GitHub\\SDLProject\\SDLProject\\MainSource.cpp",
               "RelativeDocumentMoniker": "MainSource.cpp",
-              "ToolTip": "C:\\Users\\Mtruo\\source\\repos\\SDLProject\\MainSource.cpp",
+              "ToolTip": "C:\\Users\\Mtruo\\OneDrive\\Documents\\GitHub\\SDLProject\\SDLProject\\MainSource.cpp",
               "RelativeToolTip": "MainSource.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAgwG4AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-07T20:24:30.974Z",
               "EditorCaption": ""
